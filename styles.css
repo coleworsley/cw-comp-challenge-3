@@ -1,0 +1,82 @@
+/*======================
+====Global Elements=====
+=======================*/
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:visited{
+  color: inherit;
+}
+
+main,
+.aside-nav {
+  min-height: 100%;
+}
+
+/*======================
+========Aside Bar=======
+=======================*/
+
+.aside-nav {
+  width: 200px;
+  min-width: 200px;
+  border: dotted 2px red;
+}
+
+/*======================
+========Main Box========
+=======================*/
+
+main {
+  width: 100%;
+  border: dotted 2px blue;
+}
+
+/*======================
+==========Nav===========
+=======================*/
+
+.menu {
+  display: flex;
+  height: 80px;
+  border: solid 2px red;
+}
+
+.menu-item {
+  height: 100%;
+  width: 80px;
+}
+
+.search {
+  flex: 1;
+}
+
+/*======================
+=========Header=========
+=======================*/
