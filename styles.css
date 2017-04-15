@@ -24,6 +24,11 @@ h1, h2, h3, p {
   padding: 0;
 }
 
+h1 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
 h3 {
   font-size: 10px;
 }
@@ -31,7 +36,6 @@ h3 {
 p, a, input, label {
   font-size: 12px;
 }
-
 
 a{
   text-decoration: none;
@@ -118,7 +122,7 @@ main {
 .menu {
   display: flex;
   height: 75px;
-  border: solid #F0F0F0 1px;
+  border: solid #F0F0F0 2px;
 }
 
 .menu-item {
@@ -130,7 +134,7 @@ main {
   background-position-y: 50%;
   background-position-x: 50%;
   border: none;
-  border-right: solid #F0F0F0 1px;
+  border-right: solid #F0F0F0 2px;
 }
 
 .search {
@@ -142,7 +146,16 @@ main {
 }
 
 .search {
+  padding-left: 60px;
   background-image: url("assets/icons/search.svg");
+  background-position-x: 25px;
+  font-size: 16px;
+}
+
+::placeholder {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  opacity: .8;
 }
 
 .new-profile-icon {
@@ -164,9 +177,61 @@ main {
 =======================*/
 
 .title-header {
-  /*border: 2px dotted green;*/
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
 }
 
+.job-location,
+.preview {
+  display: inline-block;
+  padding: 10px;
+}
+
+.job-location {
+  line-height: 12px;
+  padding-left: 15px;
+  background-image: url("assets/icons/location.svg");
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+}
+
+.header-btn-container {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.title-btn {
+  height: 35px;
+  width: 35px;
+  margin-left: 15px;
+  border: solid #F0F0F0 2px;
+  border-radius: 50%;
+  background: none;
+  background-image: url("assets/icons/edit.svg");
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+}
+
+.open-btn {
+  margin-left: 0;
+  width: 70px;
+  border-radius: 25px;
+  background: none;
+}
+
+.status-circle {
+  display: inline-block;
+  background: #79C12D;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
 
 /*======================
 ========Tab Bar=========
@@ -175,6 +240,7 @@ main {
 .tab-bar {
   border: 2px dotted grey;
 }
+
 
 
 /*======================
