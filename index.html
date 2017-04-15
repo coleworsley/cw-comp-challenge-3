@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
   <body>
 
     <!-- Aside Bar -->
     <aside class="aside-nav">
       <header class="aside-profile">
-        <img src="profile-picture" alt="" class="profile-picture">
+        <img src="" alt="profile-picture" class="profile-picture">
         <p>Newton Barley</p>
         <!-- CSS Down Area (Delete once finalized) -->
       </header>
@@ -52,19 +53,121 @@
       <nav class="menu">
         <input class="menu-item toggle" type="button" name="toggle-aside">
         <input class="menu-item search" type="search" name="search-bar" placeholder="Search for a job, task, or resume">
-        <input class="menu-item new-profile" type="button" name="toggle-aside">
-        <input class="menu-item calendar" type="button" name="toggle-aside">
-        <input class="menu-item grid" type="button" name="toggle-aside">
+        <input class="menu-item new-profile-icon" type="button" name="new-profile">
+        <input class="menu-item calendar-icon" type="button" name="calendar">
+        <input class="menu-item grid-icon" type="button" name="grid">
       </nav>
 
-      <header>
-        
+      <header class="title-header">
+        <div class="title-box">
+          <h1 class="job-title">Customer Service Representative</h1>
+          <p class="job-location">San Fransico, CA</p>
+          <a class="preview" href="#">Preview this post</a>
+        </div>
+        <div class="btn-container">
+          <input class="title-btn open-btn" type="button" name="open" value="OPEN">
+          <input class="title-btn flag-btn" type="button" name="flag">
+          <input class="title-btn edit-btn" type="button" name="edit">
+          <input class="title-btn delete-btn" type="button" name="delete">
+        </div>
       </header>
+
+      <section class="tab-bar">
+        <a class="tab-link" href="">SUMMARY</a>
+        <a class="tab-link" href="">APPLICANTS</a>
+        <a class="tab-link" href="">JOB BOARD</a>
+        <a class="tab-link" href="">INTERVIEWS</a>
+        <a class="tab-link" href="">ACTIVITY</a>
+        <a class="tab-link" href="">BROADCAST</a>
+        <a class="tab-link" href="">NOTIFICATIONS</a>
+      </section>
+
+      <div class="separator">
+        <hr>
+        <div class="up-arrow"></div>
+        <hr>
+      </div>
+
+      <section class="chart-area">
+        <div class="progress-charts">
+          <div class="circle-chart applicants">
+            <h2 class="chart-number">3154</h2>
+            <p class="chart-text">APPLICANTS</p>
+          </div>
+          <div class="circle-chart interviews">
+            <h2 class="chart-number">1546</h2>
+            <p class="chart-text">INTERVIEWS</p>
+          </div>
+          <div class="circle-chart forwards">
+            <h2 class="chart-number">912</h2>
+            <p class="chart-text">FORWARDS</p>
+          </div>
+        </div>
+        <img class="graph" src="assets/graph.png" alt="graph showing applicants per day">
+      </section>
+
+      <section class="table-contact">
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">
+                JOB DESCRIPTION
+                <input class="table-btn edit" type="button" name="edit" value="EDIT">
+              </th>
+              <td>
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="table-title">POSITION TITLE</td>
+              <td class="table-description">Customer Service Representative</td>
+            </tr>
+            <tr>
+              <td class="table-title">LOCATION</td>
+              <td class="table-description">San Francisco, CA</td>
+            </tr>
+            <tr>
+              <td class="table-title">EMPLOYMENT TYPE</td>
+              <td class="table-description">Full-time</td>
+            </tr>
+            <tr>
+              <td class="table-title">EXPERIENCE</td>
+              <td class="table-description">Mid-level</td>
+            </tr>
+            <tr>
+              <td class="table-title">STATUS</td>
+              <td class="table-description">Open</td>
+            </tr>
+            <tr>
+              <td class="table-title">DESCRIPTION</td>
+              <td class="table-description">
+                The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on the various product shizzle; helping the bidness reduce customer wait times while doing a backhand spring and eating a ham sandwich.
+              </td>
+            </tr>
+            <tr>
+              <td class="table-title">HIRING LEAD</td>
+              <td class="table-description">
+                <img class="hire-photo" src="" alt="Hiring lead headshot">
+                Mid-level
+              </td>
+            </tr>
+            <tr>
+              <td class="table-title">APPROVED SALARY</td>
+              <td class="table-description salary">$58,000</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <article class="contact-box">
+          <div class="btn-container">
+            <button type="button">Facebook</button>
+
+          </div>
+        </article>
+      </section>
+
+
     </main>
-
-
-
-
-
   </body>
 </html>
