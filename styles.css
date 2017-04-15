@@ -30,11 +30,11 @@ h1 {
 }
 
 h3 {
-  font-size: 10px;
+  font-size: 12px;
 }
 
-p, a, input, label {
-  font-size: 12px;
+p, a, input, label, td, button {
+  font-size: 14px;
 }
 
 a{
@@ -56,8 +56,8 @@ main,
 =======================*/
 
 .aside-nav {
-  width: 175px;
-  min-width: 175px;
+  width: 200px;
+  min-width: 200px;
   background-color: #283041;
   color: #9EAAC0;
 }
@@ -177,7 +177,7 @@ main {
 =======================*/
 
 .title-header {
-  padding: 40px;
+  padding: 30px;
   display: flex;
   justify-content: space-between;
 }
@@ -238,10 +238,40 @@ main {
 =======================*/
 
 .tab-bar {
-  border: 2px dotted grey;
+  padding: 0 30px;
+  border-bottom: 2px solid #F0F0F0;
 }
 
+.tab-link {
+  display: inline-block;
+  padding: 15px 0;
+  margin-right: 30px;
+  border-bottom: solid white 4px;
+}
 
+.tab-link:hover {
+  border-bottom: solid blue 4px;
+  font-weight: 700;
+}
+
+.notifications-tab {
+  margin-right: 0;
+}
+
+/*======================
+=========Charts=========
+=======================*/
+.chart-area {
+  background-color: grey;
+  display: flex;
+}
+
+.progress-charts {
+}
+
+.graph {
+  width: 40%;
+}
 
 /*======================
 ========Separator=======
@@ -250,39 +280,61 @@ main {
 
 
 
-
-
-
-/*======================
-=========Charts=========
-=======================*/
-.chart-area {
-  background-color: grey;
-}
-
-
-
-.graph {
-  width: 40%;
-}
-
-
 /*======================
 ==========Table=========
 =======================*/
 .table-contact {
   display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: #E8EFF4;
+}
+
+table {
+  width: 60%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+thead {
+  background-color: #5B6983;
 }
 
 
-table {
-  width: 80%;
-  border-collapse: collapse;
-  background-color: yellow;
+
+th {
+  padding: 20px;
+  text-align: left;
+}
+
+.table-header {
+  padding-right: 0
+}
+
+tr {
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+  align-items: center;
+  border-bottom: solid #F0F0F0 2px;
+}
+
+td {
+  vertical-align: top;
+  padding: 20px;
+  line-height: 16px;
+}
+
+tr:last-child {
+  border-bottom: none;
 }
 
 .table-title {
-  width: 150px;
+  min-width: 155px;
+  padding-right: 0;
+}
+
+.table-description {
 }
 
 
@@ -291,7 +343,7 @@ table {
 =======================*/
 
 .contact-box {
-  width: 20%;
+  width: 35%;
   height: 50px;
   background-color: blue;
 }

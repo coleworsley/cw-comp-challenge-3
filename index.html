@@ -84,20 +84,14 @@
       </header>
 
       <section class="tab-bar">
-        <a class="tab-link" href="">SUMMARY</a>
-        <a class="tab-link" href="">APPLICANTS</a>
-        <a class="tab-link" href="">JOB BOARD</a>
-        <a class="tab-link" href="">INTERVIEWS</a>
-        <a class="tab-link" href="">ACTIVITY</a>
-        <a class="tab-link" href="">BROADCAST</a>
-        <a class="tab-link" href="">NOTIFICATIONS</a>
+        <a class="tab-link summary-tab" href="">SUMMARY</a>
+        <a class="tab-link applicants-tab" href="">APPLICANTS</a>
+        <a class="tab-link job-tab" href="">JOB BOARD</a>
+        <a class="tab-link interviews-tab" href="">INTERVIEWS</a>
+        <a class="tab-link activity-tab" href="">ACTIVITY</a>
+        <a class="tab-link broadcast-tab" href="">BROADCAST</a>
+        <a class="tab-link notifications-tab" href="">NOTIFICATIONS</a>
       </section>
-
-      <div class="separator">
-        <hr>
-        <div class="up-arrow"></div>
-        <hr>
-      </div>
 
       <section class="chart-area">
         <div class="progress-charts">
@@ -114,19 +108,21 @@
             <p class="chart-text">FORWARDS</p>
           </div>
         </div>
-        <img class="graph" src="assets/graph.png" alt="graph showing applicants per day">
+        <img class="graph" src="assets/photos/graph.png" alt="graph showing applicants per day">
       </section>
+
+      <div class="separator">
+        <hr>
+        <div class="up-arrow"></div>
+        <hr>
+      </div>
 
       <section class="table-contact">
         <table>
           <thead>
             <tr>
-              <th colspan="2">
-                JOB DESCRIPTION
-                <input class="table-btn edit" type="button" name="edit" value="EDIT">
-              </th>
-              <td>
-              </td>
+              <th class="table-header">JOB DESCRIPTION</th>
+              <th><button class="table-btn edit" type="button" name="edit">EDIT</button></th>
             </tr>
           </thead>
           <tbody>
@@ -170,12 +166,22 @@
           </tbody>
         </table>
 
-        <article class="contact-box">
-          <div class="btn-container">
-            <button type="button">Facebook</button>
+        <section class="contact-box">
+          <article class="social-container">
+            <button class="social-media facebook"type="button">Facebook</button>
+            <button class="social-media twitter"type="button">Twitter</button>
+            <button class="social-media linkedin"type="button">LinkedIn</button>
+          </article>
 
-          </div>
-        </article>
+          <article class="share">
+            <div class="job-link">
+              <h2 class="">Link to this Job</h2>
+              <p></p>
+
+            </div>
+
+          </article>
+        </section>
       </section>
 
 
