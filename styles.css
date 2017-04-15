@@ -29,6 +29,10 @@ h1 {
   font-size: 24px;
 }
 
+h2 {
+  font-size: 20px;
+}
+
 h3 {
   font-size: 12px;
 }
@@ -300,8 +304,6 @@ thead {
   background-color: #5B6983;
 }
 
-
-
 th {
   padding: 20px;
   text-align: left;
@@ -344,12 +346,40 @@ tr:last-child {
 
 .contact-box {
   width: 35%;
-  height: 50px;
-  background-color: blue;
+}
+
+.social-media {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 3px;
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position-y: 50%;
+  background-position-x: 20px;
+  color: #fff;
+}
+
+.facebook {
+  background-color: #3854B8;
+  background-image: url(assets/icons/facebook.svg);
+}
+.twitter {
+  background-color: #0094EE;
+  background-image: url(assets/icons/twitter.svg);
+}
+.linkedin {
+  margin-bottom: 0;
+  background-color: #006AB1;
+  background-image: url(assets/icons/linkedin.svg);
 }
 
 
-
+.job-link {
+  padding-top: 30px;
+}
 
 /*======================
 =========Objects========
