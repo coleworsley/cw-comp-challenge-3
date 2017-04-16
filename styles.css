@@ -24,12 +24,17 @@ h1, h2, h3, p {
   padding: 0;
 }
 
+h2, h3, p, a, input, label, td {
+  color: #5B6983;
+}
+
 h1 {
   font-weight: 400;
   font-size: 24px;
 }
 
 h2 {
+  font-weight: 400;
   font-size: 20px;
 }
 
@@ -39,6 +44,7 @@ h3 {
 
 p, a, input, label, td, button {
   font-size: 14px;
+  line-height: 18px;
 }
 
 a{
@@ -63,7 +69,7 @@ main,
   width: 200px;
   min-width: 200px;
   background-color: #283041;
-  color: #9EAAC0;
+  color: #868994;
 }
 
 .aside-profile.links {
@@ -73,8 +79,12 @@ main,
 }
 
 .links {
-  padding: 25px;
+  padding: 25px 0;
   border-bottom: solid 2px #23293A;
+}
+
+.links:last-child {
+  border-bottom: none;
 }
 
 .profile-picture {
@@ -91,12 +101,42 @@ main,
 
 .aside-link {
   display: block;
-  padding: 10px 0 10px 25px;
+  padding: 10px 0 10px 45px;
+  border-left: 2px solid transparent;
   background-position-y: 46%;
-  background-image: url('assets/icons/briefcase.svg');
+  background-position-x: 20px;;
   background-repeat: no-repeat;
   background-size: 15px;
 }
+
+.home {background-image: url("assets/icons/home.svg")}
+.jobs {background-image: url("assets/icons/briefcase.svg")}
+.resumes {background-image: url("assets/icons/file.svg")}
+.tasks {background-image: url("assets/icons/clipboard.svg")}
+.calendar {background-image: url("assets/icons/calendar.svg")}
+.users {background-image: url("assets/icons/users.svg")}
+.locations {background-image: url("assets/icons/location.svg")}
+.workflows {background-image: url("assets/icons/link.svg")}
+.job-boards {background-image: url("assets/icons/board.svg")}
+.social {background-image: url("assets/icons/network.svg")}
+
+.aside-link:hover {
+  border-left: 2px solid #0094EE;
+  background-color: #242B3A;
+  color: #fff;
+}
+
+.home:hover {background-image: url("assets/icons/home-2.svg")}
+.jobs:hover {background-image: url("assets/icons/briefcase-2.svg")}
+.resumes:hover {background-image: url("assets/icons/file-2.svg")}
+.tasks:hover {background-image: url("assets/icons/clipboard-2.svg")}
+.calendar:hover {background-image: url("assets/icons/calendar-2.svg")}
+.users:hover {background-image: url("assets/icons/users-2.svg")}
+.locations:hover {background-image: url("assets/icons/location-2.svg")}
+.workflows:hover {background-image: url("assets/icons/link-2.svg")}
+.job-boards:hover {background-image: url("assets/icons/board-2.svg")}
+.social:hover {background-image: url("assets/icons/network-2.svg")}
+
 
 .checkbox-label {
   display: block;
@@ -126,7 +166,7 @@ main {
 .menu {
   display: flex;
   height: 75px;
-  border: solid #F0F0F0 2px;
+  border-bottom: solid #F0F0F0 1px;
 }
 
 .menu-item {
@@ -138,7 +178,7 @@ main {
   background-position-y: 50%;
   background-position-x: 50%;
   border: none;
-  border-right: solid #F0F0F0 2px;
+  border-right: solid #F0F0F0 1px;
 }
 
 .search {
@@ -175,6 +215,27 @@ main {
   border-right: none;
 }
 
+.hamburger-icon:hover,
+.new-profile-icon:hover,
+.calendar-icon:hover,
+.grid-icon:hover {
+  background-color: #0094EE;
+  cursor: pointer;
+}
+
+.hamburger-icon:hover {
+  background-image: url("assets/icons/menu-2.svg");
+}
+.new-profile-icon:hover {
+  background-image: url("assets/icons/user-2.svg");
+}
+.calendar-icon:hover {
+  background-image: url("assets/icons/calendar-2.svg");
+}
+.grid-icon:hover {
+  background-image: url("assets/icons/grid-menu-2.svg");
+}
+
 
 /*======================
 =========Header=========
@@ -193,12 +254,15 @@ main {
 }
 
 .job-location {
-  line-height: 12px;
   padding-left: 15px;
   background-image: url("assets/icons/location.svg");
   background-size: 12px;
   background-repeat: no-repeat;
   background-position-y: 50%;
+}
+
+.preview:visited {
+  color: #868994;
 }
 
 .header-btn-container {
@@ -224,9 +288,10 @@ main {
 
 .open-btn {
   margin-left: 0;
-  width: 70px;
+  width: 80px;
   border-radius: 25px;
   background: none;
+  font-size: 12px;
 }
 
 .status-circle {
@@ -243,19 +308,25 @@ main {
 
 .tab-bar {
   padding: 0 30px;
-  border-bottom: 2px solid #F0F0F0;
+  border-bottom: 2px solid #D2D8E0;
 }
 
 .tab-link {
   display: inline-block;
   padding: 15px 0;
   margin-right: 30px;
-  border-bottom: solid white 4px;
+  border-bottom: solid #fff 4px;
+  font-weight: 700;
+  color: #868994;
+}
+
+.tab-link:visited {
+  color: #868994;
 }
 
 .tab-link:hover {
-  border-bottom: solid blue 4px;
-  font-weight: 700;
+  border-bottom: solid #2096F6 4px;
+  color: #000;
 }
 
 .notifications-tab {
@@ -266,22 +337,82 @@ main {
 =========Charts=========
 =======================*/
 .chart-area {
-  background-color: grey;
   display: flex;
+  justify-content: space-between;
+  background-color: #E8EFF4;
+  padding: 30px;
 }
 
 .progress-charts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 50%;
+}
+
+.circle-chart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*transform: rotate(225deg);*/
+  height: 125px;
+  width: 125px;
+  margin-right: 20px;
+  text-align: center;
+  border: 8px solid #D2D8E0;
+  border-radius: 50%;
+}
+
+.applicants {
+  border-color: #4EB8BF #4EB8BF #4EB8BF #D2D8E0;
+}
+
+.interviews {
+  border-color: #0094EE #0094EE #D2D8E0 #D2D8E0;
+}
+
+.forwards {
+  border-color: #9E4CA3 #D2D8E0 #D2D8E0 #D2D8E0;
+}
+
+.chart-number {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.chart-text {
+  font-size: 12px;
 }
 
 .graph {
-  width: 40%;
+  display: inline-block;
+  margin-left: auto;
+  width: 350px;
+  height: 125px;
 }
 
 /*======================
 ========Separator=======
 =======================*/
+.separator {
+  display: flex;
+  justify-content: space-between;
+  background-color: #E8EFF4;
+  padding: 10px 30px;
+}
 
+hr {
+  width: 45%;
+  margin-top: 12px;
+  border-color: #D2D8E0;
+}
 
+hr:first-child {
+  margin-left: 0;
+}
+hr:last-child {
+  margin-right: 0;
+}
 
 
 /*======================
@@ -297,34 +428,47 @@ main {
 table {
   width: 60%;
   border-collapse: collapse;
-  background-color: white;
+  background-color: #fff;
 }
 
 thead {
   background-color: #5B6983;
+  color: #fff;
 }
 
 th {
-  padding: 20px;
+  min-width: 155px;
+  padding: 20px 0;
   text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
 }
 
-.table-header {
-  padding-right: 0
+.table-btn {
+  padding: 5px;
+  padding-left: 25px;
+  border: none;
+  background-color: rgba(134, 137, 148, 0.7);
+  background-image: url("assets/icons/edit.svg");
+  background-size: 15px;
+  background-position-y: 50%;
+  background-position-x: 5px;
+  background-repeat: no-repeat;
+  color: #fff;
 }
 
 tr {
   display: flex;
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
   align-items: center;
-  border-bottom: solid #F0F0F0 2px;
+  border-bottom: 2px solid #D2D8E0;
 }
 
 td {
   vertical-align: top;
-  padding: 20px;
-  line-height: 16px;
+  padding: 20px 0;
 }
 
 tr:last-child {
@@ -337,6 +481,14 @@ tr:last-child {
 }
 
 .table-description {
+  line-height: 18px;
+}
+
+.hire-photo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 
 
@@ -364,21 +516,62 @@ tr:last-child {
 
 .facebook {
   background-color: #3854B8;
-  background-image: url(assets/icons/facebook.svg);
+  background-image: url("assets/icons/facebook.svg");
 }
 .twitter {
   background-color: #0094EE;
-  background-image: url(assets/icons/twitter.svg);
+  background-image: url("assets/icons/twitter.svg");
 }
 .linkedin {
   margin-bottom: 0;
   background-color: #006AB1;
-  background-image: url(assets/icons/linkedin.svg);
+  background-image: url("assets/icons/linkedin.svg");
 }
 
+.job-link-container {
+  padding: 15px 0 25px;
+  border-bottom: 2px solid #D2D8E0;
+}
 
-.job-link {
-  padding-top: 30px;
+.job-link-container:last-child {
+  border-bottom: none;
+}
+
+.share-title {
+  padding: 10px 0 10px 25px;
+  background-image: url("assets/icons/world.svg");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position-y: 50%;
+}
+
+.share-text {
+  padding-bottom: 20px;
+}
+
+.copy-box {
+  display: flex;
+}
+
+.copy-text,
+.save-text-btn {
+  padding: 10px;
+  border: none;
+}
+
+.copy-text {
+  width: 75%;
+}
+
+.copy-text:last-child {
+  width: 100%;
+}
+
+.save-text-btn {
+  flex-grow: 1;
+  width: 25%;
+  background: #35ACB5;
+  color: #fff;
 }
 
 /*======================
@@ -388,9 +581,10 @@ tr:last-child {
   display: inline-block;
   width: 25px;
   height: 25px;
-  border: 1px solid grey;
+  border: 1px solid #D2D8E0;
   border-radius: 50%;
   text-align: center;
+  background-color: #fff;
 }
 
 .up-arrow:after {
@@ -399,7 +593,7 @@ tr:last-child {
 	display: inline-block;
   width: 5px;
   height: 5px;
-  border-top: 1px solid grey;
-  border-right: 1px solid grey;
+  border-top: 1px solid #D2D8E0;
+  border-right: 1px solid #D2D8E0;
   transform: rotate(-45deg);
 }

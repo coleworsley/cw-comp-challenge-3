@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
   </head>
   <body>
 
@@ -20,20 +20,20 @@
 
       <div class="aside-main links">
         <h3 class="aside-title">Main</h3>
-        <a href='#' class="aside-link">HOME</a>
-        <a href="#" class="aside-link">JOBS</a>
-        <a href="#" class="aside-link">RESUMES</a>
-        <a href="#" class="aside-link">TASKS</a>
-        <a href="#" class="aside-link">CALENDAR</a>
+        <a href='#' class="aside-link home">HOME</a>
+        <a href="#" class="aside-link jobs" >JOBS</a>
+        <a href="#" class="aside-link resumes">RESUMES</a>
+        <a href="#" class="aside-link tasks">TASKS</a>
+        <a href="#" class="aside-link calendar">CALENDAR</a>
       </div>
 
       <div class="aside-admin links">
         <h3 class="aside-title">Admin</h3>
-        <a href="#" class="aside-link">USERS</a>
-        <a href="#" class="aside-link">LOCATIONS</a>
-        <a href="#" class="aside-link">WORKFLOWS</a>
-        <a href="#" class="aside-link">JOB BOARDS</a>
-        <a href="#" class="aside-link">SOCIAL</a>
+        <a href="#" class="aside-link users">USERS</a>
+        <a href="#" class="aside-link locations">LOCATIONS</a>
+        <a href="#" class="aside-link workflows">WORKFLOWS</a>
+        <a href="#" class="aside-link job-boards">JOB BOARDS</a>
+        <a href="#" class="aside-link social">SOCIAL</a>
       </div>
 
       <div class="aside-categories links">
@@ -96,11 +96,11 @@
       <section class="chart-area">
         <div class="progress-charts">
           <div class="circle-chart applicants">
-            <h2 class="chart-number">3154</h2>
+            <h2 class="chart-number">3,154</h2>
             <p class="chart-text">APPLICANTS</p>
           </div>
           <div class="circle-chart interviews">
-            <h2 class="chart-number">1546</h2>
+            <h2 class="chart-number">1,546</h2>
             <p class="chart-text">INTERVIEWS</p>
           </div>
           <div class="circle-chart forwards">
@@ -108,7 +108,7 @@
             <p class="chart-text">FORWARDS</p>
           </div>
         </div>
-        <img class="graph" src="assets/photos/graph.png" alt="graph showing applicants per day">
+        <img class="graph" src="assets/photos/bar-chart.png" alt="graph showing applicants per day">
       </section>
 
       <div class="separator">
@@ -155,7 +155,7 @@
             <tr>
               <td class="table-title">HIRING LEAD</td>
               <td class="table-description">
-                <img class="hire-photo" src="" alt="Hiring lead headshot">
+                <img class="hire-photo" src="assets/photos/picard.png" alt="Hiring lead headshot">
                 Mid-level
               </td>
             </tr>
@@ -174,10 +174,27 @@
           </article>
 
           <article class="share">
-            <div class="job-link">
-              <h2 class="">Link to this Job</h2>
-              <p class="share-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <input type="text" readonly value="Lorem ipsum dolor sit amet, consectetur adipisicing">
+            <div class="job-link-container">
+              <h2 class="share-title">Link to this Job</h2>
+              <p class="share-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+              <div class="copy-box">
+                <input class="copy-text" type="text" readonly value="Lorem ipsum dolor sit amet, consectetur adipisicing">
+                <button class="save-text-btn" type="button">Copy</button>
+              </div>
+            </div>
+            <div class="job-link-container">
+              <h2 class="share-title">Link to this Job</h2>
+              <p class="share-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+              <div class="copy-box">
+                <input class="copy-text" type="text" readonly value="Lorem ipsum dolor sit amet, consectetur adipisicing">
+                <button class="save-text-btn" type="button">Copy</button>
+              </div>
+
+            </div>
+            <div class="job-link-container">
+              <h2 class="share-title">Link to this Job</h2>
+              <p class="share-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+              <input class="copy-text" type="text" readonly value="Lorem ipsum dolor sit amet, consectetur adipisicing">
             </div>
 
 
