@@ -10,7 +10,7 @@ body {
   padding: 0;
   margin: 0;
   width: 100%;
-  max-width: 100%;
+  /*min-width: 100%;*/
   min-height: 100%;
   font-family: 'Roboto', sans-serif;
 }
@@ -70,6 +70,7 @@ main,
   min-width: 200px;
   background-color: #283041;
   color: #868994;
+  transition: 200ms;
 }
 
 .profile-name {
@@ -151,11 +152,18 @@ main,
 
 main {
   width: 100%;
+  background-color: #E8EFF4;
 }
 
 /*======================
 ==========Nav===========
 =======================*/
+
+.menu,
+.title-header,
+.tab-bar {
+  background-color: #fff;
+}
 
 .menu {
   display: flex;
@@ -290,6 +298,7 @@ main {
   border-radius: 25px;
   background: none;
   font-size: 12px;
+  color: #5B6983;
 }
 
 .status-circle {
@@ -317,6 +326,12 @@ main {
   color: #868994;
 }
 
+.more-1,
+.more-2 {
+  display: none;
+  margin-right: 0;
+}
+
 .tab-link:visited {
   color: #868994;
 }
@@ -333,10 +348,19 @@ main {
 /*======================
 =========Charts=========
 =======================*/
+.chart-area,
+.separator,
+.table-contact {
+  max-width: 1200px;
+  margin: auto;
+}
+
+
 .chart-area {
   display: flex;
-  background-color: #E8EFF4;
+  justify-content: space-between;
   padding: 30px;
+
 }
 
 .progress-charts {
@@ -363,11 +387,11 @@ main {
   flex-direction: column;
   transform: rotate(225deg);
   text-align: center;
-  height: 125px;
-  width: 125px;
-  margin-right: 20px;
+  height: 150px;
+  width: 150px;
   border: 8px solid #D2D8E0;
   border-radius: 50%;
+  margin: 15px;
 }
 
 .donut-box {
@@ -404,8 +428,8 @@ main {
 .graph-image {
   display: block;
   margin-left: auto;
-  width: 350px;
-  height: 125px;
+  width: 400px;
+  height: 165px;
 }
 
 /*======================
@@ -414,6 +438,7 @@ main {
 .separator {
   display: flex;
   justify-content: space-between;
+  max-width: 1200px;
   background-color: #E8EFF4;
   padding: 10px 30px;
 }
@@ -439,6 +464,7 @@ hr:last-child {
 .table-contact {
   display: flex;
   justify-content: space-between;
+  max-width: 1200px;
   padding: 30px;
   background-color: #E8EFF4;
 }
@@ -502,13 +528,17 @@ tr:last-child {
   line-height: 18px;
 }
 
-.hire-photo {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  margin-bottom: 10px;
+.photo-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
+.hire-photo {
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
 
 /*======================
 =========Contact========
@@ -621,4 +651,134 @@ tr:last-child {
   border-top: 1px solid #D2D8E0;
   border-right: 1px solid #D2D8E0;
   transform: rotate(-45deg);
+}
+
+
+/*======================
+======Media Queries=====
+=======================*/
+
+@media (max-width: 1200px) {
+  .chart-area {
+    flex-direction: column;
+    width: 100%
+  }
+
+  .graph {
+    padding-top: 40px;
+  }
+
+  .graph-image {
+    margin-right: auto;
+    width: 500px;
+    height: auto;
+  }
+}
+
+
+@media screen and (max-width: 1020px) {
+  .tab-link:nth-child(n + 6) {
+    display: none;
+  }
+
+  .more-1 {
+    display: inline-block;
+  }
+
+  .table-contact {
+    flex-direction: column;
+  }
+
+  table,
+  .contact-box {
+    width: 100%;
+  }
+
+
+  .contact-box,
+  .share {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .aside-nav {
+    transform: translateX(-200px);
+    position: absolute;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .tab-bar {
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu-item:nth-child(n+3) {
+    display: none;
+  }
+
+  .title-header {
+    flex-direction: column;
+  }
+
+  .title-box {
+    text-align: center;
+  }
+  .header-btn-container {
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .graph-image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .menu,
+  .menu-item {
+    height: 50px;
+    border-bottom: solid #F0F0F0 1px;
+  }
+
+  .menu-item {
+    background-size: 15px;
+  }
+
+  .hamburger-icon {
+    width: 50px;
+  }
+
+  .search,
+  .search::placeholder {
+    font-size: 12px;
+  }
+
+  .search {
+    padding-left: 40px;
+    background-position-x: 15px;
+  }
+
+  .more-1,
+  .job-tab {
+    display: none;
+  }
+
+  .more-2 {
+    display: inline-block;
+  }
+
+  tbody tr {
+    flex-direction: column;
+  }
+
+  th {
+    min-width: auto;
+  }
+
+  .table-title {
+    padding-bottom: 0;
+  }
 }
