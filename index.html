@@ -36,9 +36,15 @@
         <a href="#" class="aside-link social">SOCIAL</a>
       </div>
 
+
       <div class="aside-categories links">
         <h3 class="aside-title">Categories</h3>
-        <label class="checkbox-label" for="Administrative">
+          <p class="aside-checkbox">Administrative</p>
+          <p class="aside-checkbox">Design</p>
+          <p class="aside-checkbox">Executive</p>
+          <p class="aside-checkbox">Human Resources</p>
+
+        <!-- <label class="checkbox-label" for="Administrative">
           <input class="aside-checkbox" type="checkbox" name="Administrative" value="Administrative">
           Administrative
         </label>
@@ -53,7 +59,7 @@
         <label class="checkbox-label" for="Human Resources">
           <input class="aside-checkbox" type="checkbox" name="Human Resources" value="Human Resources">
           Human Resources
-        </label>
+        </label> -->
       </div>
     </aside>
 
@@ -94,21 +100,33 @@
       </section>
 
       <section class="chart-area">
-        <div class="progress-charts">
-          <div class="circle-chart applicants">
-            <h2 class="chart-number">3,154</h2>
-            <p class="chart-text">APPLICANTS</p>
+        <div class="chart-container">
+          <div class="progress-charts">
+            <div class="circle-chart applicants">
+              <div class="donut-box">
+                <h2 class="chart-number">3,154</h2>
+                <p class="chart-text">APPLICANTS</p>
+              </div>
+            </div>
+            <div class="circle-chart interviews">
+              <div class="donut-box">
+                <h2 class="chart-number">1,546</h2>
+                <p class="chart-text">INTERVIEWS</p>
+              </div>
+            </div>
+            <div class="circle-chart forwards">
+              <div class="donut-box">
+                <h2 class="chart-number">912</h2>
+                <p class="chart-text">FORWARDS</p>
+              </div>
+            </div>
           </div>
-          <div class="circle-chart interviews">
-            <h2 class="chart-number">1,546</h2>
-            <p class="chart-text">INTERVIEWS</p>
-          </div>
-          <div class="circle-chart forwards">
-            <h2 class="chart-number">912</h2>
-            <p class="chart-text">FORWARDS</p>
-          </div>
+          <button class="chart-btn" type="button">TOTALS - Out of a lot!</button>
         </div>
-        <img class="graph" src="assets/photos/bar-chart.png" alt="graph showing applicants per day">
+        <div class="graph">
+          <img class="graph-image" src="assets/photos/bar-chart.png" alt="graph showing applicants per day">
+          <button class="chart-btn" type="button">APPLICANTS/DAY</button>
+        </div>
       </section>
 
       <div class="separator">
