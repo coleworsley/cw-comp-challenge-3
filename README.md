@@ -1,4 +1,7 @@
-# Static Comp
+# Static Comp 3
 
-![Original]('https://github.com/coleworsley/cw-comp-challenge-3/blob/master/assets/photos/static-comp-challenge-3.jpg')
-![My Version]('https://github.com/coleworsley/cw-comp-challenge-3/blob/master/assets/photos/my-version.png')
+## Original Comp
+![Original](/assets/photos/static-comp-challenge-3.jpg)
+
+## My Comp
+![My Version](/assets/photos/my-version.png)
