@@ -107,7 +107,6 @@ main,
   opacity: .8;
 }
 
-.aside-checkbox,
 .aside-link {
   display: block;
   padding: 10px 0 10px 45px;
@@ -147,6 +146,50 @@ main,
 .workflows:hover {background-image: url("assets/icons/link-2.svg")}
 .job-boards:hover {background-image: url("assets/icons/board-2.svg")}
 .social:hover {background-image: url("assets/icons/network-2.svg")}
+
+
+/*Multi Colored Checkboxes*/
+.checkbox-label {
+  padding: 10px;
+  display: block;
+  color: #868994;
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+  -webkit-appearance:none;/* Hides the default checkbox style */
+  height: 15px;
+  width: 15px;
+  cursor:pointer;
+  position:relative;
+  background-color:#900;
+  margin: 0 8px 2px 10px;
+  vertical-align: bottom;
+}
+
+
+#administrative{background-color: #F5CF00;}
+#design{background-color: #1C9BFD;}
+#executive{background-color: #E50052;}
+#human-resources{background-color: #03A076;}
+
+input[type="checkbox"]:before, input[type="checkbox"]:checked:before {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  text-align:center;
+  color:#000;
+}
+
+input[type="checkbox"]:checked:before {
+ content: '✔';
+}
+
+input[type="checkbox"]:hover:before {
+ background:rgba(255,255,255,0.3);
+}
 
 /*======================
 ========Main Box========
@@ -318,7 +361,6 @@ main {
 .edit-btn:hover{background-image: url("assets/icons/edit-2.svg")}
 .delete-btn:hover{background-image: url("assets/icons/trash-2.svg")}
 
-
 .status-circle {
   display: inline-block;
   background: #79C12D;
@@ -340,7 +382,7 @@ main {
   display: inline-block;
   padding: 15px 0;
   margin-right: 30px;
-  border-bottom: solid #fff 2px;
+  border-bottom: solid #fff 3px;
   color: #868994;
 }
 
@@ -355,7 +397,7 @@ main {
 }
 
 .tab-link:hover {
-  border-bottom: solid #2096F6 2px;
+  border-bottom: solid #2096F6 3px;
   color: #000;
 }
 
@@ -378,7 +420,6 @@ main {
   display: flex;
   justify-content: space-between;
   padding: 30px;
-
 }
 
 .progress-charts {
@@ -392,11 +433,16 @@ main {
   display: block;
   padding: 5px 15px;
   margin: 40px auto 0;
-  border: none;
   border: solid rgba(134, 137, 148, 0.5) 1px;
   border-radius: 25px;
   background-color: #fff;
   color: #5B6983;
+  cursor: pointer
+}
+
+.chart-btn:hover {
+  border-color: #000;
+  color: #000;
 }
 
 .circle-chart {
@@ -523,9 +569,8 @@ th {
 }
 
 .table-btn:hover {
-  background-color: #0094EE;
+  cursor: pointer;
 }
-
 
 tr {
   display: flex;
@@ -587,6 +632,7 @@ tr:last-child {
   background-position-y: 50%;
   background-position-x: 20px;
   color: #fff;
+  cursor: pointer;
 }
 
 .facebook {
@@ -602,6 +648,12 @@ tr:last-child {
   background-color: #006AB1;
   background-image: url("assets/icons/linkedin.svg");
 }
+
+.facebook:hover {background-color: #1f2f69;}
+.twitter:hover {background-color: #054a74;}
+.linkedin:hover {background-color: #03395d;}
+
+
 
 .job-link-container {
   padding: 15px 0 25px;
@@ -651,7 +703,13 @@ tr:last-child {
   width: 25%;
   background: #35ACB5;
   color: #fff;
+  cursor: pointer;
 }
+
+.save-text-btn:hover {
+  background-color: rgb(34, 121, 128);
+}
+
 
 /*======================
 =========Arrows=========
@@ -663,12 +721,12 @@ tr:last-child {
   background-color: #fff;
 }
 
-
 .arrow {
   display: inline-block;
   width: 25px;
   height: 25px;
   text-align: center;
+  cursor: pointer;
 }
 
 .arrow:after {
@@ -686,6 +744,7 @@ tr:last-child {
   height: 20px;
   width: 20px;
 }
+
 .arrow.down-arrow:after {
   transform: rotate(135deg);
   border-color: #868994;
