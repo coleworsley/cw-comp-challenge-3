@@ -75,6 +75,7 @@ main,
 
 .profile-name {
   color: #868994;
+  display: inline-block;
 }
 
 .aside-profile.links {
@@ -93,10 +94,11 @@ main,
 }
 
 .profile-picture {
+  display: block;
   height: 75px;
   width: 75px;
   border-radius: 50%;
-  margin-bottom: 10px;
+  margin: 0 auto 10px;
 }
 
 .aside-title {
@@ -263,6 +265,11 @@ main {
   background-position-y: 50%;
 }
 
+.title-separator {
+  display: inline-block;
+  c
+}
+
 .preview,
 .preview:visited {
   color: #2096F6;
@@ -300,6 +307,17 @@ main {
   font-size: 12px;
   color: #5B6983;
 }
+
+.title-btn:hover {
+  background-color: #0094EE;
+  color: white;
+  cursor: pointer;
+}
+
+.flag-btn:hover{background-image: url("assets/icons/banner-2.svg")}
+.edit-btn:hover{background-image: url("assets/icons/edit-2.svg")}
+.delete-btn:hover{background-image: url("assets/icons/trash-2.svg")}
+
 
 .status-circle {
   display: inline-block;
@@ -389,7 +407,7 @@ main {
   text-align: center;
   height: 150px;
   width: 150px;
-  border: 8px solid #D2D8E0;
+  border: 10px solid #D2D8E0;
   border-radius: 50%;
   margin: 15px;
 }
@@ -453,6 +471,7 @@ hr {
 hr:first-child {
   margin-left: 0;
 }
+
 hr:last-child {
   margin-right: 0;
 }
@@ -502,6 +521,11 @@ th {
   background-repeat: no-repeat;
   color: #fff;
 }
+
+.table-btn:hover {
+  background-color: #0094EE;
+}
+
 
 tr {
   display: flex;
@@ -630,19 +654,24 @@ tr:last-child {
 }
 
 /*======================
-=========Objects========
+=========Arrows=========
 =======================*/
+
 .up-arrow {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
   border: 1px solid #D2D8E0;
   border-radius: 50%;
-  text-align: center;
   background-color: #fff;
 }
 
-.up-arrow:after {
+
+.arrow {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+}
+
+.arrow:after {
   margin-top: 10px;
   content: '';
 	display: inline-block;
@@ -653,6 +682,15 @@ tr:last-child {
   transform: rotate(-45deg);
 }
 
+.down-arrow {
+  height: 20px;
+  width: 20px;
+}
+.arrow.down-arrow:after {
+  transform: rotate(135deg);
+  border-color: #868994;
+  margin-bottom: 4px;
+}
 
 /*======================
 ======Media Queries=====
@@ -710,6 +748,15 @@ tr:last-child {
 
 
 @media (max-width: 600px) {
+
+  .title-header,
+  .tab-bar,
+  .chart-area,
+  .table-contact {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .tab-bar {
     display: flex;
     justify-content: center;
@@ -770,6 +817,9 @@ tr:last-child {
     display: inline-block;
   }
 
+  .table-header {
+    margin-right: 20px;
+  }
   tbody tr {
     flex-direction: column;
   }
