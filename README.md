@@ -1,4 +1,7 @@
-# Static Comp
+# Static Comp 3
 
-![Original]('assets/photos/static-comp-challenge-3.png')
-![My Version]('assets/photos/my-version.png')
+## Original Comp
+![Original](/assets/photos/static-comp-challenge-3-original.jpg)
+
+## My Comp
+![My Version](/assets/photos/my-version.png)
