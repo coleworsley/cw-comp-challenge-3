@@ -676,6 +676,11 @@ tr:last-child {
   background-position-y: 50%;
 }
 
+.link-to-job{background-image: url("assets/icons/world.svg")}
+.widget{background-image: url("assets/icons/network.svg")}
+.upload{background-image: url("assets/icons/paper-plane.svg")}
+
+
 .share-text {
   padding-bottom: 20px;
 }
