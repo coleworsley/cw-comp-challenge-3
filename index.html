@@ -55,11 +55,11 @@
     </aside>
     <main>
       <nav class="menu">
-        <input class="menu-item hamburger-icon" type="button" name="toggle-aside">
+        <input class="menu-item hamburger-icon" type="button" name="toggle-aside" role="hide and unhide side navigation">
         <input class="menu-item search" type="search" name="search-bar" placeholder="Search for a job, task, or resume">
-        <input class="menu-item new-profile-icon" type="button" name="new-profile">
-        <input class="menu-item calendar-icon" type="button" name="calendar">
-        <input class="menu-item grid-icon" type="button" name="grid">
+        <input class="menu-item new-profile-icon" type="button" name="new-profile" role="create new profile">
+        <input class="menu-item calendar-icon" type="button" name="calendar" role="open calendar">
+        <input class="menu-item grid-icon" type="button" name="grid" role="open homepage">
       </nav>
       <header class="title-header">
         <div class="title-box">
@@ -69,13 +69,13 @@
           <a class="preview" href="#">Preview this post</a>
         </div>
         <div class="header-btn-container">
-          <button class="title-btn open-btn" type="button" name="open">
+          <button class="title-btn open-btn" type="button" name="open" role="status of requisition">
             <div class="status-circle"></div>
             OPEN
           </button>
-          <button class="title-btn flag-btn" type="button" name="flag"></button>
-          <button class="title-btn edit-btn" type="button" name="edit"></button>
-          <button class="title-btn delete-btn" type="button" name="delete"></button>
+          <button class="title-btn flag-btn" type="button" name="flag" role="flag this content"></button>
+          <button class="title-btn edit-btn" type="button" name="edit" role="edit content"></button>
+          <button class="title-btn delete-btn" type="button" name="delete" role="delete this page"></button>
         </div>
       </header>
       <section class="tab-bar">
@@ -111,11 +111,11 @@
               </div>
             </div>
           </div>
-          <button class="chart-btn" type="button">TOTALS - Out of a lot!</button>
+          <button class="chart-btn" type="button" role="click for more detail on total statistics">TOTALS - Out of a lot!</button>
         </div>
         <div class="graph">
           <img class="graph-image" src="assets/photos/bar-chart.png" alt="graph showing applicants per day">
-          <button class="chart-btn" type="button">APPLICANTS/DAY</button>
+          <button class="chart-btn" type="button" role="click for more statistics on applicants per day">APPLICANTS/DAY</button>
         </div>
       </section>
       <div class="separator">
